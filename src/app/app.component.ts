@@ -24,7 +24,7 @@ export class AppComponent {
     description:"",
     imageUrl:"",
     createDate: new Date(),
-    snaps:"",
+    snaps:0,
   };
 
   loadSnaps(){
