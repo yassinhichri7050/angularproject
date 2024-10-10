@@ -1,0 +1,122 @@
+// $color_1: #333;
+// $color_2: #888;
+// $color_3: #555;
+// $color_4: white;
+// $background-color_1: #f9f9f9;
+// $background-color_2: #ff6347;
+// $background-color_3: #ff4500;
+// .face-snap-card {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	width: 350px;
+// 	background-color: $background-color_1;
+// 	border-radius: 10px;
+// 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+// 	overflow: hidden;
+// 	transition: transform 0.3s ease;
+// 	margin: 0 auto;
+// 	margin-top: 34px;
+// 	padding: 20px;
+// 	&:hover {
+// 		transform: scale(1.03);
+// 	}
+// 	img {
+// 		width: 100%;
+// 		height: 200px;
+// 		object-fit: cover;
+// 	}
+// }
+// .face-snap-content {
+// 	padding: 15px;
+// 	text-align: center;
+// }
+// h2 {
+// 	font-size: 1.5rem;
+// 	color: $color_1;
+// 	margin-bottom: 10px;
+// }
+// .date {
+// 	color: $color_2;
+// 	font-size: 0.9rem;
+// 	margin-bottom: 10px;
+// }
+// .description {
+// 	font-size: 1rem;
+// 	color: $color_3;
+// 	margin-bottom: 20px;
+// }
+// .interaction {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// }
+// button {
+// 	background-color: $background-color_2;
+// 	color: $color_4;
+// 	border: none;
+// 	border-radius: 5px;
+// 	padding: 10px 20px;
+// 	font-size: 1rem;
+// 	cursor: pointer;
+// 	transition: background-color 0.3s ease;
+// 	&:hover {
+// 		background-color: $background-color_3;
+// 	}
+// }
+// span {
+// 	font-size: 1.2rem;
+// 	color: $color_1;
+// }
+
+.face-snap-card {
+	box-sizing: border-box;
+	width: 50%;
+	margin: 20px auto;
+	padding: 10px 30px;
+	box-shadow: lightgray 4px 4px 20px;
+
+	img {
+		width: 100%;
+	}
+
+	h2 {
+		margin-bottom: 0;
+	}
+
+	p {
+		font-weight: 300;
+		font-size: 16px;
+	}
+
+	button {
+		background-color: transparent;
+		box-sizing: border-box;
+		padding: 5px 10px;
+		border: none;
+		box-shadow: lightgray 3px 3px 7px;
+		margin-right: 20px;
+		outline: none;
+		font-size: 14px;
+		font-weight: 500;
+
+		&:active {
+			transform: translate(1px, 1px);
+			box-shadow: lightgray 0 0 5px;
+		}
+	}
+}
+
+.snapped {
+	background-color: rgba(lightgreen, 0.4);
+	color: darkgreen;
+
+	button {
+		box-shadow: lightgreen 3px 3px 7px;
+		color: darkgreen;
+
+		&:active {
+			box-shadow: lightgreen 0 0 5px;
+		}
+	}
+}

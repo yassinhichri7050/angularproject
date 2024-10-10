@@ -1,0 +1,48 @@
+.add-snap {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: lightgray 4px 4px 20px;
+}
+
+.add-snap label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.add-snap input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-snap input:focus {
+  border-color: #007bff; /* Focused input color */
+  outline: none;
+}
+
+.add-snap button {
+  padding: 10px 15px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-snap button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
