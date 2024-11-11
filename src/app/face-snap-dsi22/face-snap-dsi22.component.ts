@@ -1,13 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { FaceSnap } from '../models/face-snap.model';
 import { CommonModule } from '@angular/common';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-face-snap',
   standalone: true,
-  imports: [CommonModule],
   templateUrl: './face-snap-dsi22.component.html',
-  styleUrl: './face-snap-dsi22.component.scss'
+  styleUrl: './face-snap-dsi22.component.scss',
+  imports: [CommonModule,MatCardModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FaceSnapComponent {
   @Input() faceSnap!: FaceSnap;
